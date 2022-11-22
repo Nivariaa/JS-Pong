@@ -1,6 +1,13 @@
 
 body {
-	background: black;
+	background: #032b08;
+}
+
+#container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .right {
@@ -8,6 +15,7 @@ body {
 }
 
 .paddle {
+	border: 2px solid black;
 	position: absolute;
 	width: 10px;
 	height: 100px;
@@ -21,23 +29,27 @@ body {
 	margin-left: -100px;
 	width: 20px;
 	height: 20px;
-	background: red;
+	background: #ff3333;
+	border: 1px solid black;
 }
 
 #play-area {
 	width: 800px;
 	height: 500px;
-	border: 1px solid green;
+	border: 3px solid black;
+	background: #0b6a18;
 }
 
 .score {
 	position: absolute;
-	border: 1px solid white;
+	border: 3px solid black;
 	width: 100px;
 	height: 70px;
 	text-align: center;
 	color: white;
 	font-size: 50px;
+	margin-top: 580px;
+	background: #0b6a18;
 }
 
 #score-right {
@@ -45,7 +57,7 @@ body {
 }
 
 #score-left {
-	margin-left: 0px;
+	margin-left: -700px;
 }
 
 #serve-help {
@@ -55,6 +67,8 @@ body {
 	font-family: courier;
 	margin-top: 200px;
 	font-size: 30px;
+	opacity: 0.6;
+	font-weight: bold;
 }
 
 .laser {
@@ -69,30 +83,34 @@ body {
 .energy {
 	width: 10px;
 	height: 71px;
-	margin-top: 0px;
 	position: absolute;
+	margin-top: 581px;
 }
 
 #energy-back-right {
 	margin-left: 690px;
 	background: yellow;
-	border: 1px solid red;
+	border: 2px solid red;
+	margin-left: 580px;
 }
 
 #energy-back-left {
-	margin-left: 102px;
+	margin-left: -585px;
 	background: yellow;
-	border: 1px solid red;
+	border: 2px solid red;
 }
 
 #energy-front-left {
 	position: absolute;
 	background: black;
 	height: 71px;
+	margin-top: 0px;
 }
 
 #energy-front-right {
 	position: absolute;
 	background: black;
 	height: 71px;
+	margin-top: 0px;
+	margin-left: 0px;
 }
